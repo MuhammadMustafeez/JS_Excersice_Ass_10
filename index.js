@@ -31,14 +31,12 @@
 
 // Average of Array
 var arr = [];
+var sum = 0;
 for (let i = 0; i < 5; i++) {
     var user = +prompt("Enter the number in array");
     arr.push(user);
-}
-console.log({arr});
-var sum = 0;
-for (var i = 0; i < arr.length; i++ ){
-  sum += arr[i];
+    sum += arr[i];
 }
 average = sum / 5;
+console.log({arr});
 console.log(`the average of an 5 element array: ${average}`);
